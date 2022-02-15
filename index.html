@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Food</title>
+</head>
+
+<body>
+  <div class="main">
+    <nav class="nav">
+      <button aria-expanded="false" aria-controls="menu-list">
+        <span class="open">☰</span>
+        <span class="close">×</span>
+        Menu
+      </button>
+      <ul>
+        <li>
+          <a>
+            tacos
+          </a>
+        </li>
+        <li>
+          <a>
+            beers
+          </a>
+        </li>
+        <li>
+          <a>
+            wines
+          </a>
+        </li>
+        <li>
+          <a>
+            deserts
+          </a>
+        </li>
+        <li>
+          <a>
+            reservations
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="mainSec">
+      <header class="mainimg">
+        <h1>Terry's Toco Joint</h1>
+        <p>
+          Pretty Good Tacos
+        </p>
+      </header>
+      <div class="cta cta1">
+        <p class="price">$1.99</p>
+        <p>Taco</p>
+      </div>
+      <div class="cta cta2">
+        <p class="price">$3.99</p>
+        <p>Korbuchha</p>
+      </div>
+    </div>
+    <section class="card_div">
+      <div class="card">
+        <img src="./assets/taco.png" alt="taco" class="img">
+        <p class="title">
+          Tacos
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil
+        </p>
+      </div>
+      <div class="card">
+        <img src="./assets/beer.png" alt="beer" class="img">
+        <p class="title">
+          Beer
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil
+        </p>
+      </div>
+      <div class="card">
+        <img src="./assets/wine-glass.png" alt="wine" class="img">
+        <p class="title">
+          Wine
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil
+        </p>
+      </div>
+      <div class="card">
+        <img src="./assets/music-notes.png" alt="music" class="img">
+        <p class="title">
+          Music
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil
+        </p>
+      </div>
+    </section>
+    <section class="tacobar">
+      <img src="./assets/12.png" alt="tacos" class="tacos">
+      <div class="tacobar_content">
+        <h2>Featured Taco</h2>
+        <p class="tacobar_para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil
+        </p>
+        <p class="tacobar_para">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore nihil
+        </p>
+        <button class="tacobar_button">
+          Learn More <i class="fa fa-arrow-right" aria-hidden="true"></i>
+
+        </button>
+      </div>
+    </section>
+    <section class="img_div"> 
+      <h2>Instant Grams</h2>      
+        <img src="assets/1.jpg" alt="1" />
+        <img src="assets/2.jpg" alt="1" />
+        <img src="assets/3.jpg" alt="1" />
+        <img src="assets/4.jpg" alt="1" />
+        <img src="assets/5.jpg" alt="1" />
+        <img src="assets/6.jpg" alt="1" />
+        <img src="assets/7.jpg" alt="1" />
+        <img src="assets/8.jpg" alt="1" />
+        <img src="assets/9.jpg" alt="1" />
+        <img src="assets/10.jpg" alt="1" />
+
+
+    </section>
+  </div>
+</body>
+<script>
+    const navButton = document.querySelector('button[aria-expanded]');
+
+    function toggleNav({ target }) {
+      const expanded = target.getAttribute('aria-expanded') === 'true' || false;
+      navButton.setAttribute('aria-expanded', !expanded);
+    }
+
+    navButton.addEventListener('click', toggleNav);
+</script>
+
+</html>
